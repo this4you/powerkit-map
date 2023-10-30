@@ -1,11 +1,12 @@
 import './App.css';
-import { MapContainer } from './components/MapContainer.tsx';
+import { MapContainerPage } from './components/MapContainer.tsx';
+import { Box } from '@mui/material';
 
 function App() {
     return (
-    <>
-     <MapContainer/>
-    </>
+    <Box sx={{width:'100vw', height: '100vh', backgroundColor:'black'}}>
+     <MapContainerPage/>
+    </Box>
   )
 }
 
