@@ -3,5 +3,6 @@ export type ReceptionPointResponse = {
     Information: string,
     Lat: number,
     Lng: number,
-    Name: string
+    Name: string,
+    Url: string,
 }

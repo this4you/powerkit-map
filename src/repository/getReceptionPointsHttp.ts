@@ -13,5 +13,6 @@ export const getReceptionPointsHttp = async (): Promise<ReceptionPoint[]> => {
         lat: it.Lat,
         lng: it.Lng,
         name: it.Name,
+        url: it.Url,
     })) || [];
 }

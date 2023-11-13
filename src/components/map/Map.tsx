@@ -1,5 +1,5 @@
 import { GoogleMap, InfoWindowF, MarkerF, useLoadScript } from '@react-google-maps/api';
-import { Box } from '@mui/material';
+import { Box, Link } from '@mui/material';
 import markerIcon from '../../assets/marker-small.png'
 import { useEffect, useState } from 'react';
 import { ReceptionPoint } from '../../model/ReceptionPoint.ts';
@@ -53,9 +53,10 @@ export const Map: React.FC = () => {
                                     >
                                         {activeMarker?.id === it.id ? (
                                             <InfoWindowF onCloseClick={() => setActiveMarker(null)}>
-                                                <Box sx={{color: '#969292', maxWidth: '200px'}}>
+                                                <Box sx={{color: '#3b3939', maxWidth: '200px'}}>
                                                     <h3>{it.name}</h3>
                                                     <p>{it.information}</p>
+                                                    <Link rel='noopener noreferrer' target='_blank' href={it.url}>Показати в Google Maps</Link>
                                                 </Box>
                                             </InfoWindowF>
                                         ) : null}
