@@ -1,6 +1,6 @@
 import { GoogleMap, InfoWindowF, MarkerF, useLoadScript } from '@react-google-maps/api';
 import { Box, Link } from '@mui/material';
-import markerIcon from '../../assets/marker-small.png'
+import markerIcon from '../../assets/marker.png'
 import { useEffect, useState } from 'react';
 import { ReceptionPoint } from '../../model/ReceptionPoint.ts';
 import { getReceptionPointsHttp } from '../../repository/getReceptionPointsHttp.ts';
